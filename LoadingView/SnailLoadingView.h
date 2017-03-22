@@ -30,8 +30,7 @@
 
 @property (nonatomic, strong) UIImage *loadingImage;                    // 设置loading图片
 
-@property (nonatomic, strong) UIColor *anulusColor1;                    // 设置两条圆环颜色
-@property (nonatomic, strong) UIColor *anulusColor2;
+@property (nonatomic, strong) UIColor *anulusColor1,  *anulusColor2;    // 设置两条圆环颜色
 
 @property (nonatomic, assign) CGFloat anulusWidth;                      // 圆环的宽度
 
