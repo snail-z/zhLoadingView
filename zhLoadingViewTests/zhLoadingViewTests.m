@@ -1,18 +1,18 @@
 //
-//  SnailLoadingViewTests.m
-//  SnailLoadingViewTests
+//  zhLoadingViewTests.m
+//  zhLoadingViewTests
 //
-//  Created by zhanghao on 2017/3/22.
-//  Copyright © 2017年 zhanghao. All rights reserved.
+//  Created by yt_zhanghao on 2017/8/3.
+//  Copyright © 2017年 金慧盈通. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface SnailLoadingViewTests : XCTestCase
+@interface zhLoadingViewTests : XCTestCase
 
 @end
 
-@implementation SnailLoadingViewTests
+@implementation zhLoadingViewTests
 
 - (void)setUp {
     [super setUp];

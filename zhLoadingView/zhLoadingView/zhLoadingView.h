@@ -1,28 +1,26 @@
 //
-//  SnailLoadingView.h
-//  <https://github.com/snail-z/SnailLoadingView.git>
+//  zhLoadingView.h
+//  <https://github.com/snail-z/zhLoadingView.git>
 //
-//  Created by zhanghao on 16/5/18.
+//  Created by zhanghao on 16/2/18.
 //  Copyright © 2016年 zhanghao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-@class SnailLoadingView;
+@class zhLoadingView;
 
-@interface UIView (SnailLoading)
+@interface UIView (zhLoading)
 
-// 自定义SnailLoadingView
-@property (nonatomic, strong) SnailLoadingView *sl_loadingView;
+// 自定义LoadingView
+@property (nonatomic, strong) zhLoadingView *zh_loadingView;
 
-// 开始loading
-- (void)sl_beginLoading;
+- (void)zh_beginLoading;
 
-// 取消loading
-- (void)sl_endLoading;
+- (void)zh_endLoading;
 
 @end
 
-@interface SnailLoadingView : UIView
+@interface zhLoadingView : UIView
 
 @property (nonatomic, assign, readonly) BOOL isLoading;
 
@@ -30,7 +28,8 @@
 
 @property (nonatomic, strong) UIImage *loadingImage;                    // 设置loading图片
 
-@property (nonatomic, strong) UIColor *anulusColor1,  *anulusColor2;    // 设置两条圆环颜色
+@property (nonatomic, strong) UIColor *anulusColor1;
+@property (nonatomic, strong) UIColor *anulusColor2;                    // 设置两条圆环颜色
 
 @property (nonatomic, assign) CGFloat anulusWidth;                      // 圆环的宽度
 

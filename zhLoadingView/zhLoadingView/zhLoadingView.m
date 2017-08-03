@@ -1,50 +1,50 @@
 //
-//  SnailLoadingView.m
-//  <https://github.com/snail-z/SnailLoadingView.git>
+//  zhLoadingView.m
+//  <https://github.com/snail-z/zhLoadingView.git>
 //
-//  Created by zhanghao on 16/5/18.
+//  Created by zhanghao on 16/2/18.
 //  Copyright © 2016年 zhanghao. All rights reserved.
 //
 
-#import "SnailLoadingView.h"
+#import "zhLoadingView.h"
 #import <objc/runtime.h>
 
 #pragma mark UIView Category -
 
 static void *UIViewSnailLoadingViewKey = &UIViewSnailLoadingViewKey;
 
-@implementation UIView (SnailLoading)
+@implementation UIView (zhLoading)
 
-- (SnailLoadingView *)sl_loadingView {
+- (zhLoadingView *)zh_loadingView {
   
     id loadingView = objc_getAssociatedObject(self, UIViewSnailLoadingViewKey);
    
     // lazily create the loadingView
     if (nil == loadingView) {
-        loadingView = [[SnailLoadingView alloc] init];
-        self.sl_loadingView = loadingView;
+        loadingView = [[zhLoadingView alloc] init];
+        self.zh_loadingView = loadingView;
         
         // You can set loading image and more.
-        self.sl_loadingView.loadingImage = [UIImage imageNamed:@"loading_apple"];
+        self.zh_loadingView.loadingImage = [UIImage imageNamed:@"loading_apple"];
     }
     
     return loadingView;
 }
 
-- (void)setSl_loadingView:(SnailLoadingView *)sl_loadingView {
-    objc_setAssociatedObject(self, UIViewSnailLoadingViewKey, sl_loadingView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setZh_loadingView:(zhLoadingView *)zh_loadingView {
+    objc_setAssociatedObject(self, UIViewSnailLoadingViewKey, zh_loadingView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)sl_beginLoading {
-    self.sl_loadingView.center = self.center;
-    [self.sl_loadingView updateContents];
-    [self addSubview:self.sl_loadingView];
-    [self.sl_loadingView startAnimation];
+- (void)zh_beginLoading {
+    self.zh_loadingView.center = self.center;
+    [self.zh_loadingView updateContents];
+    [self addSubview:self.zh_loadingView];
+    [self.zh_loadingView startAnimation];
 }
 
-- (void)sl_endLoading {
-    if (self.sl_loadingView) {
-        [self.sl_loadingView stopAnimation];
+- (void)zh_endLoading {
+    if (self.zh_loadingView) {
+        [self.zh_loadingView stopAnimation];
     }
 }
 
@@ -52,14 +52,14 @@ static void *UIViewSnailLoadingViewKey = &UIViewSnailLoadingViewKey;
 
 #pragma mark SnailLoadingView Implementation -
 
-@interface SnailLoadingView ()
+@interface zhLoadingView ()
 
 @property (nonatomic, strong) CALayer *anulusLayer;
 @property (nonatomic, strong) UIImageView *logoView;
 
 @end
 
-@implementation SnailLoadingView
+@implementation zhLoadingView
 
 - (instancetype)init {
     return [self initWithFrame:CGRectZero];
@@ -152,9 +152,9 @@ static void *UIViewSnailLoadingViewKey = &UIViewSnailLoadingViewKey;
     animation.fillMode = kCAFillModeForwards;
     animation.timingFunction = _timingFunction;
     if (_onlyLogo) {
-        [_logoView.layer addAnimation:animation forKey:@"sl_logo_rotation_z"];
+        [_logoView.layer addAnimation:animation forKey:@"zh_logo_rotation_z"];
     } else {
-        [_anulusLayer addAnimation:animation forKey:@"sl_anulus_rotation_z"];
+        [_anulusLayer addAnimation:animation forKey:@"zh_anulus_rotation_z"];
         CAKeyframeAnimation* keyAnimation = [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
         keyAnimation.duration = 2.0;
         keyAnimation.values = @[@(0.1), @(1.0), @(0.1)];
@@ -162,7 +162,7 @@ static void *UIViewSnailLoadingViewKey = &UIViewSnailLoadingViewKey;
         keyAnimation.repeatCount = INFINITY;
         keyAnimation.fillMode = kCAFillModeBackwards;
         keyAnimation.removedOnCompletion = NO;
-        [_logoView.layer addAnimation:keyAnimation forKey:@"sl_logo_opacity"];
+        [_logoView.layer addAnimation:keyAnimation forKey:@"zh_logo_opacity"];
     }
 }
 
