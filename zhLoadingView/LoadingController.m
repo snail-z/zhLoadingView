@@ -7,7 +7,7 @@
 //
 
 #import "LoadingController.h"
-#import "SnailLoadingView.h"
+#import "zhLoadingView.h"
 
 @interface LoadingController ()
 
@@ -25,36 +25,36 @@
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
-    [self.view sl_endLoading];
+    [self.view zh_endLoading];
 }
 
 #pragma mark Example -
 
 - (void)example1 {
-    [self.view sl_beginLoading];
+    [self.view zh_beginLoading];
 }
 
 - (void)example2 {
     
-    SnailLoadingView *loadingView = [SnailLoadingView new];
+    zhLoadingView *loadingView = [zhLoadingView new];
     loadingView.anulusWidth = 5;
     loadingView.anulusAngle = 75;
     loadingView.anulusColor1 = [UIColor redColor];
     loadingView.anulusColor2 = [UIColor darkGrayColor];
-    self.view.sl_loadingView = loadingView;
+    self.view.zh_loadingView = loadingView;
     
-    [self.view sl_beginLoading];
+    [self.view zh_beginLoading];
 }
 
 - (void)example3 {
     
-    // 可以在"SnailLoadingView.m" 文件中 “lazily create the loadingView” 设置成默认的！
-    SnailLoadingView *loadingView = [[SnailLoadingView alloc] initWithFrame:CGRectMake(0, 0, 90, 90)];
+    // 可以在"zhLoadingView.m" 文件中 “lazily create the loadingView” 设置成默认的！
+    zhLoadingView *loadingView = [[zhLoadingView alloc] initWithFrame:CGRectMake(0, 0, 90, 90)];
     loadingView.onlyLogo = YES;
     loadingView.loadingImage = [UIImage imageNamed:@"loading_pink"];
-    self.view.sl_loadingView = loadingView;
+    self.view.zh_loadingView = loadingView;
     
-    [self.view sl_beginLoading];
+    [self.view zh_beginLoading];
 }
 
 @end
