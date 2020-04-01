@@ -1,9 +1,5 @@
-<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupController.jpg" width="700px" height="110px">
 
-<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupControllerlogo.jpg" width="680px" height="110px">
-
-
-# OverlayController
+<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupControllerlogo.jpg" width="700px" height="116px">
 
 [![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 ![enter image description here](https://img.shields.io/badge/pod-v1.0.0-brightgreen.svg)
