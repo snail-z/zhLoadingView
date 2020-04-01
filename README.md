@@ -1,4 +1,7 @@
-# OverlayController
+
+<img src="https://gitee.com/snail-z/my_assets/raw/master/Github/logozhPopupController.jpg" width="700px" height="128px">
+
+<img src="https://gitee.com/snail-z/my_assets/raw/master/Github/logoOverlayController.jpg" width="720px" height="95px">
 
 [![Swift 5.0](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 ![enter image description here](https://img.shields.io/badge/pod-v1.0.0-brightgreen.svg)
@@ -6,6 +9,10 @@
 <a href="https://github.com/snail-z/OverlayController-Swift/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat"></a>
 
 OverlayController is an implementation of a overlay effect for any view. It can be used to easily add dynamics to user interactions and popups views.
+
+<img src="https://gitee.com/snail-z/my_assets/raw/master/gifs/one2.gif" width="198px" height="402px"> <img src="https://gitee.com/snail-z/my_assets/raw/master/gifs/onefive.gif" width="128px" height="260px"> <img src="https://gitee.com/snail-z/my_assets/raw/master/gifs/one2.gif" width="128px" height="260px">
+
+
 
 ## Example
 
