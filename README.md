@@ -1,12 +1,6 @@
-<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/1585744742654.jpg" width="700px" height="100px">
-
 <img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupController.jpg" width="700px" height="110px">
 
-<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupControllerlogo.jpg" width="700px" height="115px">
-
-<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupControllerlolgo.jpg" width="500px" height="115px">
-
-<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/last.jpg" width="500px" height="115px">
+<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupControllerlogo.jpg" width="680px" height="115px">
 
 
 # OverlayController
