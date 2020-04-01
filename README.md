@@ -10,6 +10,10 @@
 
 OverlayController is an implementation of a overlay effect for any view. It can be used to easily add dynamics to user interactions and popups views.
 
+<img src="https://gitee.com/snail-z/my_assets/raw/master/gifs/alldf.gif" width="198px" height="402px"> <img src="https://gitee.com/snail-z/my_assets/raw/master/gifs/all.gif?raw=true" width="204px" height="365px">
+
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
