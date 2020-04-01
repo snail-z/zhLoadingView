@@ -1,6 +1,6 @@
 <img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupController.jpg" width="700px" height="110px">
 
-<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupControllerlogo.jpg" width="680px" height="115px">
+<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupControllerlogo.jpg" width="680px" height="110px">
 
 
 # OverlayController
