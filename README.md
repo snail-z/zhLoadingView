@@ -1,4 +1,4 @@
-<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/1585744742654.jpg" alt="zhPopupController" title="zhPopupController">
+<img src="https://gitee.com/snail-z/my_assets/raw/master/overlayController/zhPopupController.jpg" alt="zhPopupController" title="zhPopupController">
 
 
 # OverlayController
