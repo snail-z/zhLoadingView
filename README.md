@@ -10,7 +10,7 @@
 
 OverlayController is an implementation of a overlay effect for any view. It can be used to easily add dynamics to user interactions and popups views.
 
-<img src="https://github.com/snail-z/zhLoadingView/blob/develop/imgs/zhpopupController05.gif?raw=true" width="168px">. <img src="https://github.com/snail-z/zhLoadingView/blob/develop/imgs/zhpopupController11.gif?raw=true" width="168px">
+<img src="https://github.com/snail-z/zhLoadingView/blob/develop/imgs/zhpopupController05.gif?raw=true" width="168px">. <img src="https://github.com/snail-z/zhLoadingView/blob/develop/imgs/zhpopupController11.gif?raw=false" width="168px">
 
 
 
